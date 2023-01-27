@@ -51,6 +51,8 @@ for(j=0;j<=n-2-i;j++){
 }
 int isprime(int a )
 {int check =0;
+  if(a==1){return 0;}
+  else{
   for(int i=2;i<a-1;i++)
     {
       if((a%i)==0||a==1){
@@ -58,7 +60,7 @@ int isprime(int a )
       }
     }
   if (check==0) return 1;
-  else return 0;
+  else return 0;}
 }
 
 
